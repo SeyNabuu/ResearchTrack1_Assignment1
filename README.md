@@ -123,12 +123,12 @@ If the robot is already holding a token, it will throw an `AlreadyHoldingSomethi
 
 ### The Main Code ###
 
- Our main code is structured exactly like our function `Match_with_golden`.
+ Our main code is structured exactly like our function `Match_silver_with_golden`.
  But here,before anything we need to find a silver token and grab it ,which we won't do in the function.
   
  At first we check if the silver token is in our List. Thus,Robot will only match the golden token with the silver token whose number is not previously stored in our List.
  The Robot will try to find the closest silver token and grab it by calling the functions `find_silver_token` and `R.grab()`.
-     	If the silver token is grabbed,we call the fonction `Match_with_golden`. The Robot will  find the closest golden token and when distance is lesser than set threshold,the Robot releases the silver token.
+     	If the silver token is grabbed,we call the fonction `Match_silver_with_golden`. The Robot will  find the closest golden token and when distance is lesser than set threshold,the Robot releases the silver token.
      	We can add the number of the silver token in our list and increase the value of the index .
      	
 
@@ -160,7 +160,7 @@ while True
 			if the robot grabs the silver token
 				call Find_Golden_token
 				When the golden token was not already in our list 
-					Call Match_with_golden token 
+					Call Match_silver_with_golden token 
 		        		print"Silver token was successfully putted close to  Golden token"
      	          			Add the number of the golden token in our list
                  			Increase the index

@@ -160,7 +160,7 @@ while True
 			if the robot grabs the silver token
 				call Find_Golden_token
 				When the golden token was not already in our list 
-					Call Match_silver_with_golden token 
+					Call Match_silver_with_golden 
 		        		print"Silver token was successfully putted close to  Golden token"
      	          			Add the number of the golden token in our list
                  			Increase the index
